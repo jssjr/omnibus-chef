@@ -36,9 +36,9 @@ dependencies ["ruby",
 
 version case project.name
         when "chef-server"
-          ENV["CHEF_GIT_REV"] || "0.10.8"
+          ENV["CHEF_GIT_REV"] || "10.12.0"
         else
-          "0.10.8"
+          "10.12.0"
         end
 
 source :git => "gie://github.com/opscode/chef"
