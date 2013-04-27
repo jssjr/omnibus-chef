@@ -1,12 +1,22 @@
-GIT
-  remote: git://github.com/opscode/omnibus-software.git
-  revision: dc156b4a2c406af411a25318bd3c0d64a52bd7f8
-  branch: master
+PATH
+  remote: /Users/ssanders/repos/jssjr/omnibus-ruby
+  specs:
+    omnibus (1.0.2)
+      fpm (= 0.3.11)
+      mixlib-config (~> 1.1.2)
+      mixlib-shellout (~> 1.0)
+      ohai (>= 0.6.12)
+      rake (>= 0.9)
+      thor (>= 0.16.0)
+      uber-s3
+
+PATH
+  remote: /Users/ssanders/repos/jssjr/omnibus-software
   specs:
     omnibus-software (0.0.1)
 
 GEM
-  remote: https://rubygems.org/
+  remote: http://rubygems.org/
   specs:
     fpm (0.3.11)
       json
@@ -17,8 +27,6 @@ GEM
     mixlib-config (1.1.2)
     mixlib-log (1.6.0)
     mixlib-shellout (1.1.0)
-    mixlib-shellout (1.1.0-x86-mingw32)
-      win32-process (~> 0.6.5)
     ohai (6.16.0)
       ipaddress
       mixlib-cli
@@ -27,34 +35,17 @@ GEM
       mixlib-shellout
       systemu
       yajl-ruby
-    omnibus (1.0.2)
-      fpm (= 0.3.11)
-      mixlib-config (~> 1.1.2)
-      mixlib-shellout (~> 1.0)
-      ohai (>= 0.6.12)
-      rake (>= 0.9)
-      thor (>= 0.16.0)
-      uber-s3
     rake (10.0.4)
     systemu (2.5.2)
     thor (0.18.1)
     uber-s3 (0.2.4)
       mime-types (~> 1.17)
-    win32-api (1.4.8-x86-mingw32)
-    win32-process (0.6.6)
-      windows-pr (>= 1.2.2)
-    windows-api (0.4.2)
-      win32-api (>= 1.4.5)
-    windows-pr (1.2.2)
-      win32-api (>= 1.4.5)
-      windows-api (>= 0.3.0)
     yajl-ruby (1.1.0)
-    yajl-ruby (1.1.0-x86-mingw32)
 
 PLATFORMS
   ruby
   x86-mingw32
 
 DEPENDENCIES
-  omnibus (~> 1.0.0)
+  omnibus!
   omnibus-software!
